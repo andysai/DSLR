@@ -1,8 +1,21 @@
-import redis
-ip = '10.10.250.176'
-password = 'dslr#2022'
+from rediscluster import RedisCluster
 
-#redis默认连接db0
-r1 = redis.Redis(host=ip, password=password, port=6379, db=0, decode_responses=True)
-print(r1.get('name'))
+# 假设Redis集群节点的IP和端口信息如下
+startup_nodes = [
+    {"host": "10.10.250.236", "port": "30379"},
+    {"host": "10.10.250.248", "port": "30379"},
+    {"host": "10.10.250.249", "port": "30379"}
+]
 
+# 连接到Redis集群
+rc = RedisCluster(startup_nodes=startup_nodes, decode_responses=True)
+
+# 设置键值对
+rc.set("foo", "bar")
+
+# 获取键的值
+value = rc.get("foo")
+print(value)  # 输出: bar
+
+# 关闭连接
+rc.connection_pool.disconnect()
