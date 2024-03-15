@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b590e7-e6a7-4dc9-9238-d75a0f3d6099" name="更改" comment="DSLR">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python连接redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python连接redis.py" afterDir="false" />
     </list>
@@ -119,7 +118,7 @@
       <workItem from="1710483274712" duration="1522000" />
       <workItem from="1710491269333" duration="1624000" />
       <workItem from="1710501214308" duration="48000" />
-      <workItem from="1710501318445" duration="376000" />
+      <workItem from="1710501318445" duration="1628000" />
     </task>
     <task id="LOCAL-00001" summary="DSLR">
       <option name="closed" value="true" />
@@ -161,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710483312874</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="DSLR">
+      <option name="closed" value="true" />
+      <created>1710501819704</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710501819704</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
