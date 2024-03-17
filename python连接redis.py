@@ -1,27 +1,27 @@
 from rediscluster import RedisCluster
 import redis
 
-# r = redis.Redis(host='10.10.250.236', port=30379, password='Dslr#2023@PoSTeST', db=0)
-# r.set('hello2018', 'world2018')
-# print(r.get('hello2018'))
+r = redis.Redis(host='10.10.250.253', port=30379, db=0)
+r.set('hello2018', 'world2018')
+print(r.get('hello2018'))
 
-from rediscluster import RedisCluster
-# 假设Redis集群节点的IP和端口信息如下
-startup_nodes = [
-    {"host": "10.244.224.112", "port": "6379"},
-    {"host": "10.244.224.237", "port": "6379"},
-    {"host": "10.244.224.77", "port": "6379"}
-]
-
-# 连接到Redis集群
-rc = RedisCluster(startup_nodes=startup_nodes, decode_responses=True, password='Dslr#2023@PoSTeST')
-
-# 设置键值对
-rc.set("foo", "bar")
-
-# 获取键的值
-value = rc.get("foo")
-print(value)  # 输出: bar
-
-# 关闭连接
-rc.connection_pool.disconnect()
+# from rediscluster import RedisCluster
+# # 假设Redis集群节点的IP和端口信息如下
+# startup_nodes = [
+#     {"host": "10.244.224.112", "port": "6379"},
+#     {"host": "10.244.224.237", "port": "6379"},
+#     {"host": "10.244.224.77", "port": "6379"}
+# ]
+#
+# # 连接到Redis集群
+# rc = RedisCluster(startup_nodes=startup_nodes, decode_responses=True, password='Dslr#2023@PoSTeST')
+#
+# # 设置键值对
+# rc.set("foo", "bar")
+#
+# # 获取键的值
+# value = rc.get("foo")
+# print(value)  # 输出: bar
+#
+# # 关闭连接
+# rc.connection_pool.disconnect()
