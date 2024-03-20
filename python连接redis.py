@@ -1,9 +1,9 @@
 from rediscluster import RedisCluster
 import redis
 
-r = redis.Redis(host='10.10.250.253', port=30379, db=0)
-r.set('hello2018', 'world2018')
-print(r.get('hello2018'))
+r = redis.Redis(host='10.10.250.176', port=6379, password='dslr#2022', db=0)
+r.set('hello2024', 'world2024')
+print(r.get('hello2024'))
 
 # from rediscluster import RedisCluster
 # # 假设Redis集群节点的IP和端口信息如下
