@@ -2,42 +2,18 @@
 import paramiko
 import time
 
-# user = input('请输入用户名: ')
-# passwd = input('请输入密码: ')
+ssh = paramiko.SSHClient()
 
-#定义函数ssh,把操作内容写到函数里
-def sshExeCMD():
-    ssh = paramiko.SSHClient()
-    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    ssh.connect(hostname="10.15.255.27", port=22, username="dslr", password="2018_dslr.", look_for_keys=False)
-    # 执行命令 enable  cisco*.*2018dslr
-    stdin, stdout, stderr = ssh.exec_command("enable\ncisco*.*2018dslr\n")
-    command = ssh.invoke_shell()
-    # 配合send()这个函数来对交换机发号施令了
-    command.send(b"N\n")
-    command.send(b"show run\n")
-    command.send(b"quit\n")
-    command.send(b"commit\n")
-    command.send(b"quit\n")
-    command.send(b"save\n")
-    command.send(b"Y\n")
-    # 前面提到了我们import了time这个模块。有时候系统运行时会有延迟，它的作用是让系统稍侯1秒钟，再执行下面的语句。
-    time.sleep(1)
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy)
 
-    # python截屏本次运行后的所有输出记录，将其赋值给output这个变量。
-    output = command.recv(65535)
+ip = '10.10.250.202'
+port = 22
+username = 'root'
+password = "dslr#2022"
 
-    # 默认输出为bytes类型的字符串，print出来是单行数据；这里转换为str类型的字符串。
-    print(str(output, 'utf-8'))
+ssh.connect(hostname=ip, port=port, username=username, password=password)
 
-    # 获取命令结果
-    # result = stdout.read()
-    # print(result.decode('utf-8'))
+stdin, stdout, stderr = ssh.exec_command("ls")
 
-    # 关闭连接
-    ssh.close()
-
-#通过判断模块名运行上边函数
-if __name__ == '__main__':
-    sshExeCMD()
+print(stdout.read().decode('utf-8'))
 
