@@ -26,5 +26,5 @@ posweb_filename = "posWeb.war-" + str(current_time)
 sms_filename = "sms.war-" + str(current_time)
 
 # 拷贝文件
-copy_and_rename_file(posweb_source_path, posweb_folder, posweb_filename)
+#copy_and_rename_file(posweb_source_path, posweb_folder, posweb_filename)
 copy_and_rename_file(sms_source_path, sms_folder, sms_filename)

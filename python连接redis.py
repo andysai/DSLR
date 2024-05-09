@@ -1,7 +1,7 @@
 from rediscluster import RedisCluster
 import redis
 
-r = redis.Redis(host='10.10.250.253', port=30379, password='dslr#2022', db=0)
+r = redis.Redis(host='10.12.12.100', port=6379, password='dslr@2023', db=0)
 r.set('hello2024', 'world2024')
 print(r.get('hello2024'))
 

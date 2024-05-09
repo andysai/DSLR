@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b590e7-e6a7-4dc9-9238-d75a0f3d6099" name="更改" comment="DSLR">
-      <change afterPath="$PROJECT_DIR$/python连接activemq.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zabbix微信告警.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/获取容器数据/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/获取容器数据/get_docker.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/获取容器数据/远程服务器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zabbix数据调用/zabbix数据拼接.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zabbix数据调用/主机名称.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python连接redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python连接redis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/拷贝文件.py" beforeDir="false" afterPath="$PROJECT_DIR$/拷贝文件.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/远程服务器.py" beforeDir="false" afterPath="$PROJECT_DIR$/远程服务器.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,7 @@
     "Python.python连接activemq.executor": "Run",
     "Python.python连接redis.executor": "Run",
     "Python.zabbix微信告警.executor": "Run",
+    "Python.zabbix数据拼接.executor": "Run",
     "Python.拷贝文件.executor": "Run",
     "Python.远程服务器 (1).executor": "Run",
     "Python.远程服务器.executor": "Run",
@@ -62,7 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "Docker",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,28 +105,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/拷贝文件.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DSLR" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/获取容器数据" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/获取容器数据/1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="python连接activemq" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="python连接redis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSLR" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,7 +193,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python连接activemq.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python连接redis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,13 +224,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="zabbix数据拼接" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSLR" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/zabbix数据调用" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/zabbix数据调用/zabbix数据拼接.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.拷贝文件" />
+        <item itemvalue="Python.python连接redis" />
         <item itemvalue="Python.zabbix微信告警" />
         <item itemvalue="Python.远程服务器 (1)" />
-        <item itemvalue="Python.1" />
-        <item itemvalue="Python.python连接activemq" />
       </list>
     </recent_temporary>
   </component>
