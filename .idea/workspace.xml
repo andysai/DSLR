@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b590e7-e6a7-4dc9-9238-d75a0f3d6099" name="更改" comment="DSLR">
-      <change beforePath="$PROJECT_DIR$/python连接redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/python连接redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -82,7 +84,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python连接redis.py" />
+      <option name="SCRIPT_NAME" value="D:\DSLR\python远程访问linux服务器\python连接redis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,6 +115,11 @@
       <option name="presentableId" value="Default" />
       <updated>1710471207986</updated>
       <workItem from="1710471211582" duration="3584000" />
+      <workItem from="1717060510138" duration="21000" />
+      <workItem from="1717061384730" duration="6000" />
+      <workItem from="1717061482479" duration="117000" />
+      <workItem from="1717061634498" duration="108000" />
+      <workItem from="1717061828864" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="DSLR">
       <option name="closed" value="true" />
